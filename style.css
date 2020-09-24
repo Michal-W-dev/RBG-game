@@ -1,0 +1,103 @@
+body {
+	background-color: rgb(20, 20, 20);
+	color: white;
+	margin: 0;
+	font-family: fantasy;
+}
+.square {
+	width: 22%;
+	padding-bottom: 20%;
+	float: left;
+	margin: 1.5%;
+	border-radius: 15%;
+	transition: 0.9s;
+	-webkit-transition: 0.9s;
+	/* transition: background 0.9s;
+  -moz-transition: 0.9s; */
+}
+.container {
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 0 4%;
+}
+h1 {
+	font-weight: normal;
+	line-height: 1.1;
+	text-align: center;
+	background: steelblue;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 10px 0 10px;
+}
+.score {
+	font-size: 110%;
+}
+#BigRGB {
+	font-size: 150%;
+}
+/* #player2 {margin-left: 20%} */
+
+div span {
+	text-align: center;
+}
+
+#stripe {
+	background-color: white;
+	text-align: center;
+	color: rgb(20, 20, 20);
+	height: 30px;
+	margin-bottom: 2px;
+}
+
+.selected {
+	color: white;
+	background: steelblue;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 0.9px;
+	font-size: inherit;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	/* transition is not supported in every browser */
+	outline: none; /* remove border from chrome */
+}
+button:hover {
+	color: white;
+	background: steelblue;
+}
+#playAgain {
+	color: rgb(70, 130, 180, 0.4);
+	margin: 0 3.5%;
+	letter-spacing: 0.2px;
+}
+#playAgain:hover {
+	color: white;
+}
+
+#nameB2 {
+	float: right;
+}
+
+#message {
+	width: 15%;
+	display: inline-block;
+	font-size: 70%;
+}
+.dimmed {
+	color: rgb(255, 255, 255, 0.7);
+}
+.disappeared {
+	color: rgb(255, 255, 255, 0.0);
+}
+#displayP1,
+#displayP2 {
+	text-transform: none;
+}
