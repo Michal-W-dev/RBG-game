@@ -16,7 +16,7 @@ body {
   -moz-transition: 0.9s; */
 }
 .container {
-	max-width: 650px;
+	max-width: 850px;
 	margin: 0 auto;
 	padding: 0 4%;
 }
@@ -87,9 +87,9 @@ button:hover {
 }
 
 #message {
-	width: 15%;
+	width: 21%;
 	display: inline-block;
-	font-size: 70%;
+	font-size: 65%;
 }
 .dimmed {
 	color: rgb(255, 255, 255, 0.7);
@@ -100,4 +100,214 @@ button:hover {
 #displayP1,
 #displayP2 {
 	text-transform: none;
+}
+
+/* ================= OPTIONS ========================= */
+div.options {
+	margin: 0 auto;
+	width: 55%;
+	max-width: 650px;
+}
+button#options {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 25px;
+	outline: none;
+	transition: 0.5s;
+}
+button#options:hover {
+	background: slateblue;
+	border-radius: 5px;
+}
+
+button[aria-expanded="true"] ~ button {
+	border: 2px solid slateblue;
+	background: rgb(37, 31, 71);
+}
+button[aria-expanded="true"] ~ button:hover {
+	background: darkslateblue;
+	color: white;
+}
+a#tips {
+	max-width: 40px;
+}
+table {
+	border: 3px solid slateblue;
+	border-radius: 6px;
+	border-collapse: separate;
+	width: 70%;
+}
+th.col-2 {
+	width: 16.7%;
+}
+th.col-3 {
+	width: 25%;
+}
+tr.heading {
+	background: SlateBlue;
+	color: white;
+}
+tr.win-row {
+	color: darkslateblue;
+}
+td.win.P1,
+td.win.P2 {
+	font-weight: 600;
+}
+td.win {
+	border-bottom: 4px solid slateblue;
+}
+tr:nth-child(even) {
+	background: white;
+}
+span.victory {
+	position: absolute;
+	top: 40%;
+	left: 35%;
+	font-size: 80px;
+	-webkit-animation: color-change 7s infinite;
+	animation: color-change 7s infinite;
+}
+span.draw {
+	position: absolute;
+	top: 40%;
+	left: 5%;
+	font-size: 55px;
+	-webkit-animation: color-change 7s infinite;
+	animation: color-change 7s infinite;
+}
+@-webkit-keyframes color-change {
+	0% {
+		color: mediumslateblue;
+	}
+	50% {
+		color: DarkSlateBlue;
+	}
+	100% {
+		color: mediumslateblue;
+	}
+}
+@keyframes color-change {
+	0% {
+		color: mediumslateblue;
+	}
+	50% {
+		color: DarkSlateBlue;
+	}
+	100% {
+		color: mediumslateblue;
+	}
+}
+.card-body {
+	max-width: 50%;
+	margin: 20px auto;
+	z-index: 11;
+	background: lavender;
+	text-align: center;
+	color: rgb(20, 20, 20);
+}
+div.card-body#Tips {
+	max-width: 97%;
+}
+a.btn-outline-secondary {
+	text-transform: none;
+	width: 95px;
+}
+a.btn-outline-secondary:hover {
+	border: 1px solid slateblue;
+}
+button.btn-outline-success {
+	border-radius: 0;
+	border-top-right-radius: 17.6px;
+	border-top-right-radius: 1.1rem;
+	border-bottom-right-radius: 17.6px;
+	border-bottom-right-radius: 1.1rem;
+}
+.btn-outline-success {
+	border: 1px solid lightgrey;
+	color: grey;
+}
+#input-b1.btn-outline-success:hover,
+#input-b2.btn-outline-success:hover {
+	/* .btn-outline-success:hover { */
+	border-color: BlueViolet;
+	background: #968bdc;
+}
+.card-body:hover button {
+	background: #e1def5;
+	-webkit-transition: background 0.4s;
+	transition: background 0.4s;
+}
+#input-b1.btn-outline-success:active,
+#input-b2.btn-outline-success:active {
+	background: slateblue;
+	border-color: BlueViolet;
+	box-shadow: 0 0 0 0.1rem rgba(106, 90, 205, 0.4);
+}
+.btn:focus,
+input.form-control:focus {
+	border-color: BlueViolet;
+	box-shadow: 0 0 0 0.1rem rgba(106, 90, 205, 0.4);
+}
+input.form-control {
+	border-radius: 0;
+	border-top-left-radius: 4.8px;
+	border-top-left-radius: .3rem;
+	border-bottom-left-radius: 4.8px;
+	border-bottom-left-radius: .3rem;
+}
+label {
+	line-height: 2.2;
+}
+/* ====== MEDIA ======= */
+/* - size of squares */
+@media (max-width: 1300px) {
+	.container {
+		max-width: 65%;
+	}
+	.card-body {
+		max-width: 60%;
+	}
+}
+@media (max-width: 950px) {
+	.container {
+		max-width: 80%;
+	}
+	.card-body {
+		max-width: 80%;
+	}
+	#message {
+		font-size: 60%;
+	}
+}
+@media (max-width: 800px) {
+	.container {
+		max-width: 100%;
+	}
+	.card-body {
+		max-width: 90%;
+	}
+}
+@media (max-width: 650px) {
+	table {
+		width: 100%;
+	}
+	#BigRGB {
+		font-size: 120%;
+	}
+	#message {
+		font-size: 50%;
+	}
+}
+@media (max-width: 500px) {
+	button {
+		letter-spacing: 0px;
+	}
+	div.score {
+		font-size: 35px;
+	}
+	#BigRGB {
+		font-size: 100%;
+	}
 }
