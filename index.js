@@ -25,6 +25,11 @@ var endTurn = false;
 var endGame = false;
 var maxScore = 2;
 
+var drawPoint = 0;
+var countGames = 0;
+var gameWinP1 = 0;
+var gameWinP2 = 0;
+
 setOfColors(12);
 
 function gameOver() {
@@ -111,10 +116,6 @@ for (i = 0; i < modeButtons.length; i++) {
 		}
 	});
 }
-var drawPoint = 0;
-var countGames = 0;
-var gameWinP1 = 0;
-var gameWinP2 = 0;
 
 playAgain.addEventListener('click', function() {
 	if (squares[11].style.display === 'none') {
