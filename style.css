@@ -12,8 +12,6 @@ body {
 	border-radius: 15%;
 	transition: 0.9s;
 	-webkit-transition: 0.9s;
-	/* transition: background 0.9s;
-  -moz-transition: 0.9s; */
 }
 .container {
 	max-width: 850px;
@@ -35,7 +33,6 @@ h1 {
 #BigRGB {
 	font-size: 150%;
 }
-/* #player2 {margin-left: 20%} */
 
 div span {
 	text-align: center;
@@ -66,7 +63,6 @@ button {
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
-	/* transition is not supported in every browser */
 	outline: none; /* remove border from chrome */
 }
 button:hover {
@@ -260,8 +256,9 @@ input.form-control {
 label {
 	line-height: 2.2;
 }
+
 /* ====== MEDIA ======= */
-/* - size of squares */
+
 @media (max-width: 1300px) {
 	.container {
 		max-width: 65%;
