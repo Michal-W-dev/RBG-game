@@ -11,83 +11,76 @@
     <title>RGB</title>
   </head>
   <body>
-<h1> COLOR GAME <br> <span id="BigRGB"></span>
-<div class="score"> <span id="player1">                <span id="displayP1" class="displayP1">P1</span>: <span id="displayScoreP1">0</span></span><span id="message"></span>
-                    <span id="player2" class="dimmed"> <span id="displayP2" class="displayP2">P2</span>: <span id="displayScoreP2">0</span></span></h1></div>
-<div id="stripe">
-  <button id="nextRound">New colors</button>
+    <h1> COLOR GAME <br> <span id="BigRGB"></span>
+    <div class="score"> <span id="player1">                <span id="displayP1" class="displayP1">P1</span>: <span id="displayScoreP1">0</span></span><span id="message"></span>
+                        <span id="player2" class="dimmed"> <span id="displayP2" class="displayP2">P2</span>: <span id="displayScoreP2">0</span></span></h1></div>
+    <div id="stripe">
+      <button id="nextRound">New colors</button>
 
-   <span      > <button id="playAgain">Play Again</button> </span>
+       <span      > <button id="playAgain">Play Again</button> </span>
 
-   <button id="easyB" class='modeB'>Easy</button>
-   <button id="hardB" class="modeB selected">Hard</button>
- </div>
-<!-- <button id="nameB1">P1 name</button>
-<button id="nameB2">P2 name</button> -->
+       <button id="easyB" class='modeB'>Easy</button>
+       <button id="hardB" class="modeB selected">Hard</button>
+     </div>
 
 
-<div class="options" >
-<button id="options" class="options" type="button" data-toggle="collapse" data-target="#collapseOptions" aria-expanded="false" aria-controls="collapseOptions">
-  <!-- Options --> <i class="fas fa-angle-down"></i><i class="fas fa-angle-down"></i> 
-</button>
-</div>
-<div class="collapse" id="collapseOptions">
-<!-- ------------ OPTIONS ---------------- -->
-  <div class="card card-body">
-    <!-- <h2 class="text-left">OPTIONS</h2> -->
-    <div class="row mb-3 pl-4 pl-sm-2 pl-m-1 pl-lg-0">
-      <label class="col-sm-3 mb-0 p-0" for="inputP1">Player 1 name:</label>
-      <input id="inputP1" class="form-control m-0 col-9 col-sm-5 col-lg-4 col-lx-3" type="text" placeholder="Enter your name">
-      <button class="btn btn-outline-success" type="button" id="input-b1"><i class="fas fa-check"></i></button>
+    <div class="options" >
+    <button id="options" class="options" type="button" data-toggle="collapse" data-target="#collapseOptions" aria-expanded="false" aria-controls="collapseOptions">
+      <!-- Options --> <i class="fas fa-angle-down"></i><i class="fas fa-angle-down"></i> 
+    </button>
     </div>
-    
-    <div class="row mb-1 pl-4 pl-sm-2 pl-m-1 pl-lg-0">
-      <label class="col-sm-3 mb-0 p-0" for="inputP2">Player 2 name:</label>
-      <input id="inputP2" class="form-control m-0 col-9 col-sm-5 col-lg-4 col-lx-3" type="text" placeholder="Enter your name">
-      <button class="btn btn-outline-success" type="button" id="input-b2"><i class="fas fa-check"></i></button>
-    </div>
-    <h3 class="text-left my-3 ml-2 text-secondary">Last Results</h3>
-    <!-- <p id="resultsP1" class="text-left"><span class="displayP1">P1</span> results : </p>
-    <p id="resultsP2" class="text-left"><span class="displayP2">P2</span> results : </p> -->
+      <div class="collapse" id="collapseOptions">
+      <!-- ------------ OPTIONS ---------------- -->
+        <div class="card card-body">
+          <div class="row mb-3 pl-4 pl-sm-2 pl-m-1 pl-lg-0">
+            <label class="col-sm-3 mb-0 p-0" for="inputP1">Player 1 name:</label>
+            <input id="inputP1" class="form-control m-0 col-9 col-sm-5 col-lg-4 col-lx-3" type="text" placeholder="Enter your name">
+            <button class="btn btn-outline-success" type="button" id="input-b1"><i class="fas fa-check"></i></button>
+          </div>
 
-    <table class="">
-      <tr class="heading">
-        <th class="col-2"></th>
-        <th class="col-3"><span class="displayP1">P1</span></th>
-        <th class="col-3"><span class="displayP2">P2</span></th>
-      </tr>
-      <tr class="win-row">
-        <td class="win">WINS</td>
-        <td class="win P1">0</td>
-        <td class="win P2">0</td>
-      </tr>
-    </table> 
+          <div class="row mb-1 pl-4 pl-sm-2 pl-m-1 pl-lg-0">
+            <label class="col-sm-3 mb-0 p-0" for="inputP2">Player 2 name:</label>
+            <input id="inputP2" class="form-control m-0 col-9 col-sm-5 col-lg-4 col-lx-3" type="text" placeholder="Enter your name">
+            <button class="btn btn-outline-success" type="button" id="input-b2"><i class="fas fa-check"></i></button>
+          </div>
+          <h3 class="text-left my-3 ml-2 text-secondary">Last Results</h3>
+          <!-- <p id="resultsP1" class="text-left"><span class="displayP1">P1</span> results : </p>
+          <p id="resultsP2" class="text-left"><span class="displayP2">P2</span> results : </p> -->
 
- 
-    <!-- <a class="btn btn-outline-secondary btn-sm mt-4" data-toggle="collapse" href="#collapseOptions" role="button" aria-expanded="false" aria-controls="collapseOptions">
-      <i class="fas fa-arrow-left mr-1"></i>  Go Back
-    </a> -->
+          <table class="">
+            <tr class="heading">
+              <th class="col-2"></th>
+              <th class="col-3"><span class="displayP1">P1</span></th>
+              <th class="col-3"><span class="displayP2">P2</span></th>
+            </tr>
+            <tr class="win-row">
+              <td class="win">WINS</td>
+              <td class="win P1">0</td>
+              <td class="win P2">0</td>
+            </tr>
+          </table> 
 
-  </div>
-</div>
+
+        </div>
+      </div>
 <!-- ------------ END OF OPTIONS ---------------- -->
 
 
 
-<div class="container">
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square easyMode"></div>
-  <div class="square easyMode"></div>
-  <div class="square easyMode"></div>
-  <div class="square easyMode"></div>
-</div>
+    <div class="container">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square easyMode"></div>
+      <div class="square easyMode"></div>
+      <div class="square easyMode"></div>
+      <div class="square easyMode"></div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
