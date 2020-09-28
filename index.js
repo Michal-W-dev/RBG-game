@@ -49,7 +49,6 @@ function whichTurn() {
 	if (endTurn == false) {
 		turnP1 = !turnP1;
 	}
-	// console.log(turnP1);
 	if (turnP1 == false && endTurn == false) {
 		player1.classList.add('dimmed');
 		player2.classList.remove('dimmed');
@@ -160,8 +159,6 @@ function results() {
 			drawPoint = 0;
 		}
 		countGames++;
-		// console.log('score1 ', score1);
-		// console.log('score2 ', score2);
 	}
 }
 $('#options').click(function() {
@@ -231,22 +228,6 @@ $('#input-b2').click(function() {
 	}
 });
 
-// nameB1.addEventListener('click', function() {
-// 	//Change of names (player1)
-// 	displayP1.textContent = prompt('Player1, please insert your name:');
-// 	if (displayP1.textContent == '') {
-// 		displayP1.textContent = 'P2';
-// 	}
-// });
-
-// nameB2.addEventListener('click', function() {
-// 	//Change of names (player1)
-// 	displayP2.textContent = prompt('Player2, please insert your name:');
-// 	if (displayP2.textContent == '') {
-// 		displayP2.textContent = 'P2';
-// 	}
-// });
-
 //Reset display
 function reset() {
 	h1.style.background = 'steelblue';
@@ -265,7 +246,7 @@ function setOfColors(hardEasy) {
 	colors = generateRandomColors(hardEasy); //Create (RGB array)
 	pickedColor = pickColor(); //Pick random color from (RGB array)
 	bigRGB.textContent = pickedColor;
-} //h1 display
+}
 
 //Random index from (RGB array)
 function pickColor() {
