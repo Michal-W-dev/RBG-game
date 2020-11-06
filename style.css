@@ -3,6 +3,7 @@ body {
 	color: white;
 	margin: 0;
 	font-family: fantasy, sans-serif;
+	font-weight: 300;
 }
 .square {
 	width: 22%;
@@ -19,7 +20,7 @@ body {
 	padding: 0 4%;
 }
 h1 {
-	font-weight: normal;
+	font-weight: 300;
 	line-height: 1.1;
 	text-align: center;
 	background: steelblue;
