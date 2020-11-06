@@ -2,7 +2,7 @@ body {
 	background-color: rgb(20, 20, 20);
 	color: white;
 	margin: 0;
-	font-family: fantasy, sans-serif;
+	font-family: sans-serif, fantasy;
 	font-weight: 300;
 }
 .square {
@@ -57,7 +57,7 @@ button {
 	background: none;
 	text-transform: uppercase;
 	height: 100%;
-	font-weight: 700;
+	font-weight: 400;
 	color: steelblue;
 	letter-spacing: 0.9px;
 	font-size: inherit;
@@ -150,7 +150,7 @@ tr.win-row {
 }
 td.win.P1,
 td.win.P2 {
-	font-weight: 600;
+	font-weight: 400;
 }
 td.win {
 	border-bottom: 4px solid slateblue;
