@@ -57,14 +57,14 @@ button {
 	background: none;
 	text-transform: uppercase;
 	height: 100%;
-	font-weight: 400;
+	font-weight: 600;
 	color: steelblue;
 	letter-spacing: 0.9px;
 	font-size: inherit;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
-	outline: none; /* remove border from chrome */
+	outline: none !important;  /* remove border from chrome */
 }
 button:hover {
 	color: white;
